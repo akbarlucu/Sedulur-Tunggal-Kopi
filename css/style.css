@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #101010;
-  min-height: 3000px;
+  min-height: 5000px;
 }
 
 /* Navbar */
@@ -111,14 +111,20 @@ body {
 .hero .content h1 {
   font-size: 5em;
   color: #fff;
-  text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+  text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
     3px -3px 0 #000;
   line-height: 1.2;
 }
 
 .hero .content h1 span {
   color: var(--primary);
-  text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+  text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
     3px -3px 0 #000;
 }
 
@@ -144,19 +150,22 @@ body {
 
 /* About Section */
 .about,
-.menu {
+.menu,
+.contact {
   padding: 7rem 7% 1.4rem;
 }
 
 .about h2,
-.menu h2 {
+.menu h2,
+.contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 
 .about h2 span,
-.menu h2 span {
+.menu h2 span,
+.contact h2 span {
   color: var(--primary);
 }
 
@@ -189,7 +198,15 @@ body {
   line-height: 1.6;
 }
 
-.menu p {
+/* Menu Section */
+
+.menu h2,
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.menu p,
+.contact p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -206,6 +223,7 @@ body {
 
 .menu .row .menu-card {
   text-align: center;
+  padding-bottom: 4rem;
 }
 
 .menu .row .menu-card img {
@@ -213,6 +231,23 @@ body {
   width: 80%;
 }
 
+.menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+/* Contact section */
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #eeb311;
+  flex-wrap: wrap;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
 /* Media Queries */
 
 /* Desktop */
@@ -284,6 +319,10 @@ body {
 
   .about .row .content p {
     font-size: 2rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
   }
 
   /* Menu Section */
