@@ -235,6 +235,11 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
 /* Contact section */
 .contact .row {
   display: flex;
