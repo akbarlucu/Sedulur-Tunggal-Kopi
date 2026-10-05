@@ -245,13 +245,21 @@ body {
   display: flex;
   margin-top: 2rem;
   background-color: #eeb311;
-  flex-wrap: wrap;
 }
 
 .contact .row .map {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
 }
 /* Media Queries */
 
